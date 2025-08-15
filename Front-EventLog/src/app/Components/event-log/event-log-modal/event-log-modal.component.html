@@ -4,17 +4,17 @@
 
   <mat-form-field appearance="fill">
     <mat-label>Fecha del evento</mat-label>
-    <input matInput [matDatepicker]="picker" formControlName="eventDate">
+    <input matTooltip="Haz click en el icono para elegir fecha" matInput [matDatepicker]="picker" formControlName="eventDate">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
 
   <mat-form-field  appearance="fill" class="full-width">
     <mat-label>Descripción</mat-label>
-    <textarea matInput formControlName="description"></textarea>
+    <textarea  matTooltip="Ingresa aqui la descripción" matInput formControlName="description"></textarea>
   </mat-form-field>
   <div class="actions">
-    <button mat-button (click)="close()">Cancelar</button>
-    <button mat-raised-button color="primary" (click)="save()">Guardar</button>
+    <button matTooltip="Haz click para cancelar el registro" mat-button (click)="close()">Cancelar</button>
+    <button matTooltip="Haz click para guardar el registro" mat-raised-button color="primary" (click)="save()">Guardar</button>
   </div>
 </form>

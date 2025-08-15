@@ -72,3 +72,134 @@ form{
       margin-right: 10px;
       
 }
+
+.event-card {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 20px auto;
+
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+
+  .styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+
+    mat-header-row {
+      background-color: #1976d2;
+      color: white;
+      font-weight: 600;
+      border-radius: 8px 8px 0 0;
+    }
+
+    mat-row {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e3f2fd;
+      }
+    }
+
+    mat-cell, mat-header-cell {
+      padding: 12px 16px;
+      text-align: left;
+    }
+  }
+
+  .no-events {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-style: italic;
+  }
+}
+
+.filter-card {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 20px auto;
+}
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+
+  .filter-form {
+  display: flex
+;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+    .filter-field {
+      flex: 1 1 200px;
+      min-width: 180px;
+    }
+    mat-label {
+        font-weight: 500;
+      }
+    
+
+    .filter-button {
+      height: 56px; 
+      min-width: 100px;
+    }
+  .h1-card{
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+ max-width: 872px;
+  margin: 20px auto;
+}
+       /* Estilo para la tarjeta de filtro */
+
+/* Título dentro de la tarjeta */
+.filter-card h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Botón de registrar evento */
+.botonRegistrar {
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.botonRegistrar:hover {
+  background-color: #303f9f;
+  color: #fff;
+}
+
+/* Efecto hover para el botón */
+.btnFilter:hover {
+  background-color: #303f9f;
+  color: #fff;
+}
+
+
