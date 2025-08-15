@@ -1,0 +1,72 @@
+.container {
+  padding: 20px;
+}
+
+.header-actions {
+  margin-bottom: 15px;
+}
+
+.filters-card {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.filters-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  align-items: end;
+}
+
+.filter-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.table-card {
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.botonRegistrar{
+  margin-bottom: 20px;
+}
+
+.mat-mdc-card {
+    display: flex
+;
+    box-sizing: border-box;
+    position: relative;
+    border-style: solid;
+    border-width: 0;
+    background-color: var(--mat-card-elevated-container-color, var(--mat-sys-surface-container-low));
+    border-color: var(--mat-card-elevated-container-color, var(--mat-sys-surface-container-low));
+    border-radius: var(--mat-card-elevated-container-shape, var(--mat-sys-corner-medium));
+    box-shadow: var(--mat-card-elevated-container-elevation, var(--mat-sys-level1));
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form{
+  display: flex
+;
+    align-items: center;
+}
+.filterFo{
+    margin-bottom: 20px;
+}
+.description {
+      margin-left: 12px;
+      margin-right: 12px;}
+.endDate{
+      margin-right: 10px;
+      
+}
