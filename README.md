@@ -61,8 +61,8 @@ CREATE TABLE EventLogs (
 
 1. Clonar el repositorio:  
    ```bash
-   git clone https://github.com/tu-usuario/EventLogsApp.git
-   cd EventLogsApp/Backend
+   git clone  https://github.com/tu-usuario/EventLogs.git
+  
    ```
 
 2. Restaurar paquetes NuGet:  
@@ -87,7 +87,7 @@ CREATE TABLE EventLogs (
    dotnet run
    ```
 
-   La API quedará disponible en `https://localhost:5001/api/eventlogs`
+   La API quedará disponible en `https://localhost:7135/api/EventLogs`
 
 ---
 
@@ -95,20 +95,17 @@ CREATE TABLE EventLogs (
 
 1. Navegar al proyecto Angular:  
    ```bash
-   cd ../Frontend
-   ```
 
 2. Instalar dependencias:  
    ```bash
    npm install
    ```
 
-3. Configurar URL del backend en `environment.ts`:  
+3. Configurar URL del backend en `Services.ts`:  
    ```ts
-   export const environment = {
-     production: false,
-     apiUrl: 'https://localhost:5001/api/eventlogs'
-   };
+  
+     apiUrl: 'https://localhost:7135/api/EventLogs'
+   
    ```
 
 4. Ejecutar la aplicación Angular:  
@@ -124,7 +121,7 @@ CREATE TABLE EventLogs (
 
 ### Registrar evento vía API
 
-- Endpoint: `POST /api/eventlogs`
+- Endpoint: `POST https://localhost:7135/api/EventLogs`
 - Body ejemplo (JSON):  
 ```json
 {
