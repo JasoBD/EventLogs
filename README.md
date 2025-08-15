@@ -93,22 +93,25 @@ CREATE TABLE EventLogs (
 
 ### Frontend (Angular)
 
-1. Navegar al proyecto Angular:  
+1. Clonar el repositorio:  
+   ```bash
+   git clone  https://github.com/tu-usuario/EventLogs.git
+  
+2. Abre la carpeta "Front-EventLogs" con tu editor de codigo:  
    ```bash
 
-2. Instalar dependencias:  
+3. Instalar dependencias desde la terminal :  
    ```bash
    npm install
    ```
 
-3. Configurar URL del backend en `Services.ts`:  
+4. Configurar URL del backend en `Services.ts`:  
    ```ts
   
      apiUrl: 'https://localhost:7135/api/EventLogs'
    
    ```
-
-4. Ejecutar la aplicación Angular:  
+5. Ejecutar la aplicación Angular:  
    ```bash
    ng serve
    ```
