@@ -5,7 +5,9 @@
 .header-actions {
   margin-bottom: 15px;
 }
-
+.matInput{
+  border-radius: 10px;
+}
 .filters-card {
   padding: 15px;
   margin-bottom: 20px;

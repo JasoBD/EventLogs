@@ -85,7 +85,7 @@ export class EventLogComponent implements OnInit {
         this.snackBar.open('Evento guardado!', 'Cerrar', { duration: 8000 });
         this.loadEvents(); // Recarga la tabla de eventos
       },
-      error: () => this.snackBar.open('Error guardando evento', 'Cerrar', { duration: 3000 }) // Notificación de error
+      error: () => this.snackBar.open('Error guardando evento', 'Cerrar', { duration: 5000 }) // Notificación de error
     });
   }
 
@@ -111,14 +111,14 @@ export class EventLogComponent implements OnInit {
     if (eventType === '' && startDate != null) {
       this.events$ = this.service.getEvents(eventType, startDate, endDate).pipe(
         catchError(() => {
-          this.snackBar.open('Error cargando eventos', 'Cerrar', { duration: 3000 });
+          this.snackBar.open('Error cargando eventos', 'Cerrar', { duration: 5000 });
           return of([]);
         })
       );
     } else if (eventType !== '' && startDate != null) {
       this.events$ = this.service.getEvents(eventType, startDate, endDate).pipe(
         catchError(() => {
-          this.snackBar.open('Error cargando eventos', 'Cerrar', { duration: 3000 });
+          this.snackBar.open('Error cargando eventos', 'Cerrar', { duration: 5000 });
           return of([]);
         })
       );
@@ -127,7 +127,7 @@ export class EventLogComponent implements OnInit {
     } else if (eventType !== '' && startDate === null) {
       this.events$ = this.service.getEvents(eventType).pipe(
         catchError(() => {
-          this.snackBar.open('Error cargando eventos', 'Cerrar', { duration: 3000 });
+          this.snackBar.open('Error cargando eventos', 'Cerrar', { duration: 5000 });
           return of([]);
         })
       );
