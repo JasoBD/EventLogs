@@ -1,0 +1,73 @@
+/* Contenedor general del modal */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaciado entre campos */
+  padding: 36px;
+  max-width: 450px; /* Ajusta ancho máximo */
+  width: 100%;
+  box-sizing: border-box; /* Evita que padding haga overflow */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Encabezado centrado */
+h2[mat-dialog-title] {
+  margin: 39px 19px 1px 17px;
+  font-size: 24px;
+  HEIGHT: 52PX;
+  font-weight: 600;
+  color: #3f51b5;
+  text-align: center;
+}
+
+/* Campos ocupan todo el ancho disponible */
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Textarea más alta */
+mat-form-field textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Botones alineados a la derecha */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap; /* Evita overflow si la pantalla es pequeña */
+}
+
+/* Botón principal */
+button[color="primary"] {
+  background-color: #3f51b5;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button[color="primary"]:hover {
+  background-color: #303f9f;
+}
+
+/* Botón secundario */
+button.mat-button {
+  color: #3f51b5;
+}
+
+/* Fondo claro y bordes redondeados para los campos */
+mat-form-field.mat-form-field {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+/* Iconos de fecha y select */
+.mat-datepicker-toggle,
+.mat-select-trigger {
+  color: #3f51b5;
+}
